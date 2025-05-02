@@ -29,8 +29,8 @@
   }
 }
 ::-webkit-scrollbar {
-  width: 3.32px;
-  height: 3.32px;
+  width: 5.32px;
+  height: 6.32px;
 }
 
 ::-webkit-scrollbar-track {
@@ -81,6 +81,7 @@ header .btn {
  display: none;
 
  }
+
  @media (max-width:1219px) {
   .banner_container .contacts button{
     font-size: 10px;
@@ -99,6 +100,9 @@ header .btn {
   }
   .banner_container {
     padding: 67px 30px;
+  }
+  .posib_container {
+    padding: 0px 30px;
   }
   .project_container {padding: 0px 30px;}
   .banner_container h1 {
@@ -123,7 +127,7 @@ header .btn {
 
   header .low_res_menu {
     padding-bottom: 50px;
-    top: 80px;
+    top: 70px;
     display: flex;
    }
   header .logo {
@@ -167,6 +171,9 @@ header a {
 }
 
 @media (max-width:897px) {
+  .project_container .projects {
+    padding-bottom: 27px;
+  }
     .project_container .info_block {
     flex-direction: column;
   }
@@ -197,5 +204,76 @@ header a {
   }
 }
 
-/* project */
+@media (max-width:703px) {
+  .banner_container .phone {
+    width: 200px;
+    }
+}
+
+@media (max-width:639px) {
+  .banner_container .phone {
+    width: 150px;
+    }
+    .posib_container >div:last-child  {
+      grid-template-columns: repeat(2,minmax(152px,1fr));
+      grid-template-rows:repeat(3,minmax(147px,1fr)) ;
+      gap: 7px  ;
+    }
+}
+@media (max-width:579px) {
+  .banner_container .phone {
+    display: none;
+    }
+}
+.posib_container .last {
+  display: none;
+}
+.posib_container .low_res_info {
+  display: none;
+}
+@media (max-width:1115px) {
+  .posib_container {
+    margin-top: 50px;
+  }
+  .posib_container .low_res_info {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .posib_container .last {
+    display: flex;
+  } 
+  .posib_container >div:last-child >div:first-child {
+    display: none;
+  }
+  .posib_container >div:last-child  {
+    /* grid-template-columns: repeat(2,minmax(152px,1fr));
+    grid-template-rows:repeat(3,minmax(147px,1fr)) ; */
+    gap: 7px  ;
+  }
+
+  .posib_container >div:last-child h1  {
+    text-align: center;
+    font-size: 11px;
+  }
+  .posib_container >div:last-child p  {
+    font-size: 7px;
+    text-align: center;
+  }
+  .posib_container >div:last-child .img  {
+   width: 50px;
+   height: 45px;
+  }
+  .posib_container >div:last-child >div  {
+    align-items: center;
+
+   height: 100%;
+   }
+   .posib_container >div:last-child >div>div:nth-child(2)  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+}
 
