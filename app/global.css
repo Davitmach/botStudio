@@ -1,0 +1,201 @@
+@import "tailwindcss";
+@font-face {
+  font-family: 'Mont';
+  src: url('/Mont-ExtraLightDEMO.otf') format('opentype');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('/Mont-HeavyDEMO.otf') format('opentype');
+  font-weight: 900;
+}
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+::-webkit-scrollbar {
+  width: 3.32px;
+  height: 3.32px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333333;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0F72EB;
+  border-radius: 9999px;
+}
+body {
+ 
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+button {
+  cursor: pointer;
+}
+.gradient {
+  background: linear-gradient(to right, #0F72EB, #00B0F2,#0F72EB); /* задаём градиент */
+  -webkit-background-clip: text; /* клипируем фон по тексту */
+  -webkit-text-fill-color: transparent; /* делаем текст "прозрачным", чтобы был виден градиент */
+}
+/* haeder  */
+header {
+  box-shadow: 0px 2px 12.2px 0px #357ACF26;
+  background: #FDFFFE;
+
+}
+header .logo {
+ font-family: Mont;
+ font-weight: 900;
+  background: linear-gradient(to right, #0F72EB, #00B0F2,#0F72EB); /* задаём градиент */
+  -webkit-background-clip: text; /* клипируем фон по тексту */
+  -webkit-text-fill-color: transparent; /* делаем текст "прозрачным", чтобы был виден градиент */
+  
+}
+header .btn {
+  box-shadow: 0px 1.5px 1.5px 0px #223B5A59;
+
+ }
+ header .burder_btn {
+  display: none;
+ }
+ header .low_res_menu {
+ display: none;
+
+ }
+ @media (max-width:1219px) {
+  .banner_container .contacts button{
+    font-size: 10px;
+    width: 130px;
+    height: 27px;
+    padding: 0;
+  }
+  .banner_container .contacts .info {
+    font-size: 10px;
+  }
+  .banner_container .title {
+    max-width: 500px;
+  }
+  .banner_container .info {
+    max-width: 300px;
+  }
+  .banner_container {
+    padding: 67px 30px;
+  }
+  .project_container {padding: 0px 30px;}
+  .banner_container h1 {
+    font-size: 44px;
+  }
+  .banner_container p {
+    font-size: 14px;
+    
+  }
+  header .menu {
+    display: none;
+  }
+  header .burder_btn {
+    display: flex;
+   }
+  header>div {
+    padding: 0 30px;
+  }
+  header .header_container {
+   height: 70px;
+  }
+
+  header .low_res_menu {
+    padding-bottom: 50px;
+    top: 80px;
+    display: flex;
+   }
+  header .logo {
+    font-size: 25px;
+  }
+header ul {
+gap: 20px;
+
+}
+header a {
+  font-size: 15px;
+  
+  }
+  header .contacts{display: none; }
+  header .btn {
+    padding: 5px 10px;
+    font-size: 13px;
+  
+   }
+   header .contacts svg {
+    width: 20px;
+   }
+}
+
+/* banner */
+
+
+@media (max-width:1399px) {
+  .banner_container .phone {
+    width: 300px;
+  }
+
+  .project_container .info_block h1 {
+    font-size: 23px;
+    max-width: 230px;
+  }
+  .project_container .info_block p {
+    font-size:14px;
+    max-width: 502px;
+  }
+}
+
+@media (max-width:897px) {
+    .project_container .info_block {
+    flex-direction: column;
+  }
+  .banner_container .title {
+    max-width: 325px;
+  }
+  .banner_container .title h1 {
+    font-size: 31px;
+  }
+  .banner_container .phone {
+  width: 250px;
+  }
+  .project_container .projects h1 {
+    font-size: 9px;
+    width: 100%;
+  }
+  .project_container .projects p {
+    font-size: 8px;
+    width: 100%;
+  }
+  .project_container .projects >div {
+    width:154px;
+    
+  }
+  .project_container .projects .img{
+    height: 102px;
+    
+  }
+}
+
+/* project */
+
