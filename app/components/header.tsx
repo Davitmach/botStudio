@@ -28,7 +28,7 @@ export const Header = () => {
     return(
         <header className="fixed w-full z-[99999999999999999]  flex items-center justify-between  ">
   <div className=" header_container px-[58px] max-w-[2000px] h-[98px] w-full mx-auto  flex items-center justify-between relative">
-  <div className="logo font-[800] text-[33px] ">Bot Studio</div>
+  <div className="logo font-[600] text-[33px] font-[Mont] ">Bot Studio</div>
   <div className="menu">
     <ul className="flex items-center gap-[60px]">
       <li><h1  onClick={()=>HandleScroll('#banner') }   className=" cursor-pointer text-[#000000] font-[600] font-[Mont]  text-[18.71px]">О студии</h1></li>

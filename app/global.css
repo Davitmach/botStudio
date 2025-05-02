@@ -90,7 +90,7 @@ header {
 }
 header .logo {
  font-family: Mont;
- font-weight: 900;
+ font-weight: 800;
   background: linear-gradient(to right, #0F72EB, #00B0F2,#0F72EB); /* задаём градиент */
   -webkit-background-clip: text; /* клипируем фон по тексту */
   -webkit-text-fill-color: transparent; /* делаем текст "прозрачным", чтобы был виден градиент */
