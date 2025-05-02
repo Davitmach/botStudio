@@ -1,9 +1,9 @@
 export const Posib = ()=> {
     return(
-        <div className="max-w-[2000px] mx-auto w-full   posib_container px-[58px] mt-[112px] ">
+        <div id="posib" className="max-w-[2000px] mx-auto w-full   posib_container px-[58px] mt-[112px] ">
        <div className="low_res_info mb-[19px]"> <h1  className="font-[Mont] text-center font-[900] text-[23px] max-w-[164px] w-full ">Возможности
        <span className="gradient"> Bot Studio</span></h1></div>
-        <div className="grid grid-cols-3 grid-rows-2 gap-[23px]">
+        <div className="grid grid-cols-3 grid-rows-[repeat(2,minmax(0,268px))] gap-[23px]">
         <div className=" w-full aspect-[1/0.5839] rounded-[12px]">   
             <h1  className="font-[Mont] font-[900] text-[44px] max-w-[319px] w-full ">Возможности
             <span className="gradient"> Bot Studio</span></h1>

@@ -1,6 +1,6 @@
 export const Project = ()=> {
     return(
-        <div className="project_container flex flex-col max-w-[2000px] mx-auto px-[58px] gap-[68px] mb-[48px]">
+        <div id="project" className="project_container flex flex-col max-w-[2000px] mx-auto px-[58px] gap-[68px] mb-[48px]">
             <div className="flex items-start justify-between gap-[30px] info_block">
                 <div><h1 className="text-[44px] font-[Mont] font-[900] max-w-[423px] w-full">Изучите наши
                 <span className="gradient">  готовые решения</span></h1></div>

@@ -4,15 +4,36 @@ import { useState } from "react"
 
 export const Header = () => {
     const [active,setActive] = useState(false);
+    const HandleScroll = (page:string) => {
+    
+        const targetElement = document.querySelector(page);
+        const header = document.querySelector('header'); // Получаем элемент header
+        if (targetElement && header) {
+          // Получаем высоту header
+          const headerHeight = header.offsetHeight;
+    
+         
+          const position = targetElement.getBoundingClientRect();
+    
+          
+          window.scrollTo({
+            top: position.top + window.pageYOffset - headerHeight, // Учитываем высоту header
+            left: 0,
+            behavior: 'smooth',
+          });
+          setActive(false);
+        }
+      
+    };
     return(
-        <header className=" flex items-center justify-between  ">
+        <header className="fixed w-full z-[999999999]  flex items-center justify-between  ">
   <div className=" header_container px-[58px] max-w-[2000px] h-[98px] w-full mx-auto  flex items-center justify-between relative">
   <div className="logo font-[800] text-[33px] ">Bot Studio</div>
   <div className="menu">
     <ul className="flex items-center gap-[60px]">
-      <li><a href="" className=" text-[#000000] font-[600] text-[18.71px]">О студии</a></li>
-      <li><a href="" className=" text-[#000000] font-[600] text-[18.71px]">Готовые решения</a></li>
-      <li><a href="" className=" text-[#000000] font-[600] text-[18.71px]">Возможности</a></li>
+      <li><h1  onClick={()=>HandleScroll('#banner') }   className=" text-[#000000] font-[600] text-[18.71px]">О студии</h1></li>
+      <li><h1 onClick={()=>HandleScroll('#project') }  className=" text-[#000000] font-[600] text-[18.71px]">Готовые решения</h1></li>
+      <li><h1 onClick={()=> HandleScroll('#posib')}  className=" text-[#000000] font-[600] text-[18.71px]">Возможности</h1></li>
     </ul>
   </div>
   <div className=" flex items-center gap-[35px] contacts">
@@ -23,7 +44,7 @@ export const Header = () => {
 </svg>
 <span className="text-[#000000] font-[600]">Telegram</span>
     </div>
-    <div><button className="bg-[#0F72EB] btn text-[15px] font-[600] rounded-[22px] py-[10px] px-[20px] text-white">Оставить заявку</button></div>
+    <div><button className="bg-[#0F72EB] btn text-[15px] font-[600] rounded-[22px] py-[10px] px-[20px] text-white" onClick={()=> HandleScroll('#mail')}>Оставить заявку</button></div>
   </div>
   </div>
   <div className="burder_btn" onClick={()=> setActive(!active)}>{active ?<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,13 +78,13 @@ export const Header = () => {
 }} className="low_res_menu absolute bg-white z-[999999999999] pb-[50px] w-full flex flex-col items-center gap-[32px] duration-300">
   <div>
     <ul className="flex flex-col items-center gap-[15px]">
-        <li><a href="" className="text-black text-[18px]">О студии</a></li>
-        <li><a href="" className="text-black text-[18px]">Готовые решения</a></li>
-        <li><a href="" className="text-black text-[18px]">Возможности</a></li>
+        <li><h1 onClick={()=> HandleScroll('#banner')}  className="text-black text-[18px]">О студии</h1></li>
+        <li><h1  onClick={()=>HandleScroll('#project') }  className="text-black text-[18px]">Готовые решения</h1></li>
+        <li><h1  onClick={()=>HandleScroll('#posib') }  className="text-black text-[18px]">Возможности</h1></li>
     </ul>
   </div>
   <div className="flex items-center flex-col gap-[20px]">
-    <div><button className="bg-[#0F72EB]  text-[15px] font-[600] rounded-[22px] py-[10px] px-[35px] text-white">Оставить заявку</button></div>
+    <div><button className="bg-[#0F72EB]  text-[15px] font-[600] rounded-[22px] py-[10px] px-[35px] text-white" onClick={()=> HandleScroll('#mail')}>Оставить заявку</button></div>
     <div className="flex gap-[6px]"><svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M0.340234 5.82026C0.369974 5.80533 0.399728 5.79114 0.428724 5.7777C0.93282 5.54327 1.44361 5.32377 1.95365 5.10427C1.98116 5.10427 2.02725 5.07216 2.05327 5.06171C2.09267 5.04454 2.13209 5.02811 2.17149 5.01094C2.24733 4.97809 2.32317 4.94598 2.39826 4.91313C2.54994 4.84818 2.70086 4.78322 2.85254 4.71827L3.76035 4.32779C4.36556 4.06797 4.97153 3.8074 5.57674 3.54758C6.18196 3.28776 6.78791 3.0272 7.39312 2.76738C7.99833 2.50756 8.60428 2.247 9.20949 1.98718C9.8147 1.72736 10.4207 1.46679 11.0259 1.20697C11.1605 1.14873 11.3062 1.06212 11.4504 1.03674C11.5716 1.01509 11.6898 0.97328 11.8118 0.950135C12.043 0.906085 12.298 0.888169 12.5196 0.984481C12.5962 1.01808 12.6668 1.06511 12.7255 1.1241C13.0066 1.40333 12.9672 1.86174 12.9077 2.25446C12.4935 4.99152 12.0794 7.72934 11.6645 10.4664C11.608 10.842 11.5307 11.2541 11.2355 11.4915C10.9857 11.6923 10.6303 11.7147 10.3218 11.6296C10.0132 11.5438 9.7411 11.3638 9.47418 11.1869C8.36711 10.4507 7.25929 9.71457 6.15221 8.97841C5.88901 8.80371 5.59608 8.57525 5.59905 8.25794C5.60054 8.06681 5.71428 7.89658 5.83027 7.74502C6.79237 6.48474 8.18049 5.61868 9.21321 4.41664C9.35894 4.24716 9.47344 3.94105 9.27344 3.84324C9.15448 3.78501 9.01767 3.86415 8.90911 3.93955C7.54404 4.89148 6.17973 5.84415 4.81465 6.79608C4.36929 7.10667 3.90237 7.42622 3.36556 7.50237C2.88526 7.57106 2.40199 7.43667 1.9373 7.29929C1.5477 7.18431 1.15883 7.06635 0.771469 6.94465C0.565519 6.88044 0.352875 6.81101 0.193766 6.66542C0.0346557 6.51983 -0.0567829 6.27494 0.0391291 6.08083C0.0993529 5.95913 0.216085 5.88223 0.338763 5.81951L0.340234 5.82026Z" fill="#00B0F2"/>
 </svg>

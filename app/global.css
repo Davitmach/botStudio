@@ -14,7 +14,9 @@
   --background: #ffffff;
   --foreground: #171717;
 }
-
+html,body {
+  scroll-behavior: smooth;
+}
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -30,7 +32,7 @@
 }
 ::-webkit-scrollbar {
   width: 5.32px;
-  height: 4.32px;
+  height: 6.32px;
 }
 
 ::-webkit-scrollbar-track {
@@ -41,6 +43,7 @@
 ::-webkit-scrollbar-thumb {
   background-color: #0F72EB;
   border-radius: 9999px;
+  cursor: pointer;
 }
 body {
  
@@ -89,6 +92,9 @@ header .btn {
     height: 27px;
     padding: 0;
   }
+  .footer {
+    padding: 60px 30px;
+  }
   .banner_container .contacts .info {
     font-size: 10px;
   }
@@ -107,6 +113,7 @@ header .btn {
   .posib_container {
     padding: 0px 30px;
   }
+
   .project_container {padding: 0px 30px;}
   .banner_container h1 {
     font-size: 44px;
@@ -235,8 +242,14 @@ header a {
   display: none;
 }
 @media (max-width:1115px) {
+  .footer_menu {
+    gap: 30px;
+  }
   .posib_container {
     margin-top: 50px;
+  }
+  .posib_container >div:nth-child(2) {
+    grid-template-rows: repeat(2,minmax(0,190px));
   }
   .posib_container .low_res_info {
     display: flex;
@@ -412,4 +425,42 @@ header a {
     width: 430%;
     left: -250%;
   }
+}
+
+@media (max-width:987px) {
+  .footer_menu li {
+    font-size: 15px;
+  }
+  .footer h1 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width:899px) {
+  .footer {
+    flex-direction: column;
+    padding-bottom: 100px;
+  }
+  .f_col {
+    gap: 0;
+  }
+  .footer ul {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 9px;
+  }
+  .l_col {
+    align-items: start;
+    transform: translateY(40px);
+  }
+  .footer .start {
+    position: absolute;
+    right:40px;
+    top:76px
+  }
+  .footer .prava {
+    position: absolute;
+    bottom: 30px;
+  }
+
 }

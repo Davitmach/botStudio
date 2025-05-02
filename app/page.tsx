@@ -1,4 +1,5 @@
 import { Banner } from "./components/banner";
+import { Footer } from "./components/footer";
 import { Header } from "./components/header";
 import { Mail } from "./components/mail";
 import { Posib } from "./components/posib";
@@ -13,6 +14,7 @@ export default function Home() {
 <Project/>
 <Posib/>
 <Mail/>
+<Footer/>
 <div className="bg-[#F4F4F4] w-full absolute h-[4000px] left-0 bottom-0 z-[-1]"></div>
     </div>
   );
