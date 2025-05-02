@@ -1,6 +1,7 @@
+'use client'
 export const Mail = ()=> {
     return(
-        <div className="max-w-[2000px] w-full mx-auto">
+        <div className="max-w-[1437px] w-full mx-auto">
         <div id="mail" className="mb-[55px] mail_container justify-between    relative flex  h-[544px] overflow-hidden bg-[#FFFFFF] rounded-[25px] py-[47px] px-[59px] mx-[58px] mt-[118px]">
 
 <svg className="absolute left-0 bottom-[-20px]  w-full  aspect-[1/.3]"   viewBox="0 0 1318 394" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -14,10 +15,12 @@ export const Mail = ()=> {
     о вашей идее</h2></div>
     <div><p className="text-[#333333] text-[23px] max-w-[440px] w-full ">А мы подберем и реализуем решение, которое будет работать на вас!</p></div>
 </div>
-<div className="flex flex-col gap-[8px] contacts">
+<div className="flex flex-col gap-[8px] contacts cursor-pointer" onClick={()=> {
+    window.open('https://t.me/botstudiooo','_blank')
+}}>
     <div className="flex items-center gap-[15px]">
 <img src="/bot.png" alt="" />
-        <h3 className="font-[400] text-[#FFFFFF] text-[21px]">Bot Studio </h3>
+        <h3 className="font-[400] text-[#FFFFFF] text-[21px] font-[Mont]">Bot Studio </h3>
     </div>
     <div><span className="text-[#FFFFFF] text-[16px] ">Официальный канал в Telegram </span></div>
 </div>
@@ -25,12 +28,14 @@ export const Mail = ()=> {
 
 
 <div className="z-[999999999]">
-    <div><h1 className="max-w-[498px] w-full font-[600] text-[#333333] text-[23px]">Свяжемся с вами, чтобы уточнить детали
+    <div><h1 className="max-w-[498px] w-full font-[700] text-[#333333] text-[23px] font-[Mont]">Свяжемся с вами, чтобы уточнить детали
     вашей задумки</h1></div>
+    <form action="">
     <div className="w-full mt-[13px]"><input className= "outline-none bg-[#F2F2F2] rounded-[30px] py-[19px] px-[29px] w-full" type="text" placeholder="Ваше ФИО" /></div>
-    <div className="w-full "><input className="mt-[14px] outline-none bg-[#F2F2F2] rounded-[30px] py-[19px] px-[29px] w-full" type="text" placeholder="Ссылка на ваш профиль в Telegram" /></div>
+    <div className="w-full "><input className="mt-[14px] outline-none bg-[#F2F2F2] rounded-[30px] py-[19px] px-[29px] w-full" type="text" placeholder="Ссылка на ваш профиль в Telegram" required /></div>
     <div className=""><textarea  name="" className="mt-[13px] h-[136px] bg-[#F2F2F2] rounded-[30px] py-[19px] px-[29px] w-full resize-none outline-none" placeholder="Опишите вашу идею или задачу" id=""></textarea></div>
-    <div className=""><button className="mt-[32px] w-[184p] text-[#333333] font-[600] text-[14px] bg-[#FFFFFF] rounded-[20px] py-[9px] px-[31px]">Отправить</button></div>
+    <div className=""><button className="mt-[32px] w-[184p] text-[#333333] font-[600] text-[14px] bg-[#FFFFFF] rounded-[20px] font-[Mont] py-[9px] px-[31px]">Отправить</button></div>
+    </form>
     <div className="mt-[13px]"><span className="italic text-[#FFFFFF] text-[10px]">Нажимая “Отправить” вы соглашаетесь с Политика в отношении обработки персональных данных</span></div>
 </div>
 

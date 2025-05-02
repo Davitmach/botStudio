@@ -1,15 +1,38 @@
 @import "tailwindcss";
 @font-face {
   font-family: 'Mont';
-  src: url('/Mont-ExtraLightDEMO.otf') format('opentype');
-  font-weight: 200;
+  src: url('/MontRegular.ttf') format('opentype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Mont';
+  src: url('/MontSemiBold.ttf') format('opentype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Mont';
+  src: url('/MontBold.ttf') format('opentype');
+  font-weight: 800;
+}
+/* @keyframes scrollX {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(calc(-50%)); }
+  100% { transform: translateX(0); }
 }
 
-@font-face {
+.projects {
+  animation: scrollX 20s linear infinite;
+  will-change: transform;
+}
+
+.projects.paused {
+  animation-play-state: paused;
+} */
+/* @font-face {
   font-family: 'Mont';
   src: url('/Mont-HeavyDEMO.otf') format('opentype');
   font-weight: 900;
-}
+} */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -294,7 +317,7 @@ header a {
 }
 
 .mail_container svg {
-  bottom: -30%;
+  bottom: 0%;
 }
 @media (max-width:1711px) {
   .mail_container svg {
@@ -369,9 +392,12 @@ header a {
     font-size: 10px;
     border-radius: 14px;
     margin-top: 8px;
+
   }
   .mail_container input::placeholder,textarea::placeholder {
     font-size: 9px;
+    font-family: 'Mont';
+    
   }
   .mail_container h1 {
     display: none;
