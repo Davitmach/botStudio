@@ -9,7 +9,7 @@ export const Posib = ()=> {
             <span className="gradient"> Bot Studio</span></h1>
             <p className="text-[#333333] text-[20px] w-full  ">Широкий спектр возможностей позволяет создавать индивидуальные решения для вас и вашего бизнеса</p>
         </div>
-        <div className="bg-white w-full justify-start  rounded-[12px] h-[247px] py-[22px] px-[20px] flex flex-col gap-[14px]">
+        <div className="bg-white w-full justify-start  rounded-[12px] h-full py-[22px] px-[20px] flex flex-col gap-[14px]">
         <div className="w-[82px] h-[73px] img"><img className="w-full h-full object-cover" src={'/posib1.png'}/></div>
         <div>
             <h1 className="font-[700] text-[#333333] text-[20px]">Индивидуальная разработка</h1>
@@ -17,7 +17,7 @@ export const Posib = ()=> {
         </div>
         <div><a href="" className="font-[700] text-[#0F72EB] text-[14px]">Подробнее</a></div> 
         </div>
-        <div className="bg-white w-full justify-start  rounded-[12px] h-[247px] py-[22px] px-[20px] flex flex-col gap-[14px]">
+        <div className="bg-white w-full justify-start  rounded-[12px] h-full py-[22px] px-[20px] flex flex-col gap-[14px]">
         <div className="w-[82px] h-[73px] img"><img className="w-full h-full object-cover" src={'/posib3.png'}/></div>
         <div>
             <h1 className="font-[700] text-[#333333] text-[20px]">Интеграции с любыми сервисами</h1>
@@ -26,7 +26,7 @@ export const Posib = ()=> {
         </div>
         <div><a href="" className="font-[700] text-[#0F72EB] text-[14px]">Подробнее</a></div> 
         </div>
-        <div className="bg-white w-full justify-start rounded-[12px] h-[247px] py-[22px] px-[20px] flex flex-col gap-[14px]">
+        <div className="bg-white w-full justify-start rounded-[12px] h-full py-[22px] px-[20px] flex flex-col gap-[14px]">
         <div className="w-[82px] h-[73px] img"><img className="w-full h-full object-cover" src={'/posib3.png'}/></div>
         <div>
             <h1 className="font-[700] text-[#333333] text-[20px]">AI-функции</h1>
@@ -34,7 +34,7 @@ export const Posib = ()=> {
         </div>
         <div><a href="" className="font-[700] text-[#0F72EB] text-[14px]">Подробнее</a></div> 
         </div>
-        <div className="bg-white w-full justify-start rounded-[12px] h-[247px] py-[22px] px-[20px] flex flex-col gap-[14px]">
+        <div className="bg-white w-full justify-start rounded-[12px] h-full py-[22px] px-[20px] flex flex-col gap-[14px]">
         <div className="w-[82px] h-[73px] img"><img className="w-full h-full object-cover" src={'/posib4.png'}/></div>
         <div>
             <h1 className="font-[700] text-[#333333] text-[20px]">Конструкторы</h1>
@@ -42,7 +42,7 @@ export const Posib = ()=> {
         </div>
         <div><a href="" className="font-[700] text-[#0F72EB] text-[14px]">Подробнее</a></div> 
         </div>
-        <div className="bg-white w-full justify-start rounded-[12px] h-[247px] py-[22px] px-[20px] flex flex-col gap-[14px]" >
+        <div className="bg-white w-full justify-start rounded-[12px] h-full py-[22px] px-[20px] flex flex-col gap-[14px]" >
         <div className="w-[82px] h-[73px] img"><img className="w-full h-full object-cover" src={'/posib5.png'}/></div>
         <div>
             <h1 className="font-[700] text-[#333333] text-[20px]">Аналитика и поддержка 24/7</h1>

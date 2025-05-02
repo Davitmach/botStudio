@@ -30,7 +30,7 @@
 }
 ::-webkit-scrollbar {
   width: 5.32px;
-  height: 6.32px;
+  height: 4.32px;
 }
 
 ::-webkit-scrollbar-track {
@@ -100,6 +100,9 @@ header .btn {
   }
   .banner_container {
     padding: 67px 30px;
+  }
+  .mail_container {
+    margin: 67px 30px;
   }
   .posib_container {
     padding: 0px 30px;
@@ -215,7 +218,7 @@ header a {
     width: 150px;
     }
     .posib_container >div:last-child  {
-      grid-template-columns: repeat(2,minmax(152px,1fr));
+      grid-template-columns: repeat(2,minmax(100px,1fr));
       grid-template-rows:repeat(3,minmax(147px,1fr)) ;
       gap: 7px  ;
     }
@@ -277,3 +280,136 @@ header a {
 
 }
 
+.mail_container svg {
+  bottom: -30%;
+}
+@media (max-width:1711px) {
+  .mail_container svg {
+    bottom: -20%;
+  }
+}
+@media (max-width:1461px) {
+  .mail_container svg {
+    bottom: -10%;
+  }
+}
+@media (max-width:1323px) {
+  .mail_container svg {
+    bottom: 0%;
+  }
+}
+
+.mail_container input::placeholder,textarea::placeholder {
+  color: #555555;
+  font-size: 15px;
+
+}
+@media (max-width:1295px) {
+  .mail_container {
+    flex-direction: column;
+    height: auto;
+    position: relative;
+    padding-bottom: 104px;
+    padding-inline: 24px;  
+    padding-top: 20px;
+    border-radius: 8px;
+  }
+  .mail_container h2 {
+    font-size: 28px;
+    max-width: 265px;
+  }
+  .mail_container p {
+    font-size: 11px;
+    max-width: 245px;
+  }
+  .mail_container button {
+    font-size: 8px;
+    margin-top: 18px;
+    padding: 6px 31px;
+  }
+  .mail_container input{
+    padding: 10px 14px;
+    height: 30px;
+    font-size: 10px;
+    border-radius: 14px;
+    margin-top: 8px;
+  }
+  .mail_container span {
+    font-size: 8px;
+  }
+  .mail_container h3{
+  font-size: 9px;
+  }
+  .mail_container img {
+    width: 15px;
+    height: 15px;
+  }
+  .mail_container .contacts {
+    gap: 3px;
+  }
+  .mail_container .contacts>div:first-child {
+    gap: 6px;
+  }
+  .mail_container textarea{
+    padding: 10px 14px;
+    height: 74px;
+    font-size: 10px;
+    border-radius: 14px;
+    margin-top: 8px;
+  }
+  .mail_container input::placeholder,textarea::placeholder {
+    font-size: 9px;
+  }
+  .mail_container h1 {
+    display: none;
+  }
+  .mail_container .contacts {
+    position: absolute;
+    bottom: 28px;
+  }
+  .mail_container svg {
+    bottom:0;
+    width: 200%;
+    left: -70%;
+  }
+}
+@media (max-width:843px) {
+ 
+  .mail_container svg {
+    bottom: 0;
+    width: 250%;
+    left: -100%;
+  }
+}
+@media (max-width:743px) {
+ 
+  .mail_container svg {
+    bottom: 0;
+    width: 280%;
+    left: -130%;
+  }
+}
+@media (max-width:655px) {
+ 
+  .mail_container svg {
+    bottom: 0;
+    width: 300%;
+    left: -160%;
+  }
+}
+@media (max-width:569px) {
+ 
+  .mail_container svg {
+    bottom: 0;
+    width: 300%;
+    left: -150%;
+  }
+}
+@media (max-width:449px) {
+ 
+  .mail_container svg {
+    bottom: 0;
+    width: 430%;
+    left: -250%;
+  }
+}
