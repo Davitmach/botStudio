@@ -15,7 +15,7 @@ export const Posib = ()=> {
             <h1 className="font-[700] text-[#333333] text-[20px] font-[Mont]">Индивидуальная разработка</h1>
             <p className="text-[#333333] text-[13px]">Создаём ботов «под ключ», учитывая бизнес-процессы и бренд-гайд клиента</p>
         </div>
-        <div><a href="" className=" text-[#0F72EB] text-[14px] font-[Mont] font-[700]">Подробнее</a></div> 
+        <div><a href="https://t.me/botstudiooo" target="blank" className=" text-[#0F72EB] text-[14px] font-[Mont] font-[700]" >Подробнее</a></div> 
         </div>
         <div className="bg-white w-full justify-start  rounded-[12px] h-full py-[22px] px-[20px] flex flex-col gap-[14px]">
         <div className="w-[82px] h-[73px] img"><img className="w-full h-full object-cover" src={'/posib3.png'}/></div>
@@ -32,7 +32,7 @@ export const Posib = ()=> {
             <h1 className="font-[700] text-[#333333] text-[20px] font-[Mont]">AI-функции</h1>
             <p className="text-[#333333] text-[13px]">Встраиваем ChatGPT-подобные диалоги, классификацию запросов и генерацию контента </p>
         </div>
-        <div><a href="" className="font-[700] text-[#0F72EB] text-[14px] font-[Mont] font-[600]">Подробнее</a></div> 
+        <div><a href="https://t.me/botstudiooo" target="blank" className="font-[700] text-[#0F72EB] text-[14px] font-[Mont] ">Подробнее</a></div> 
         </div>
         <div className="bg-white w-full justify-start rounded-[12px] h-full py-[22px] px-[20px] flex flex-col gap-[14px]">
         <div className="w-[82px] h-[73px] img"><img className="w-full h-full object-cover" src={'/posib4.png'}/></div>
@@ -40,7 +40,7 @@ export const Posib = ()=> {
             <h1 className="font-[700] text-[#333333] text-[20px] font-[Mont]">Конструкторы</h1>
             <p className="text-[#333333] text-[13px]">Запускаем функциональных ботов на визуальных конструкторах за считанные дни и без лишних затрат </p>
         </div>
-        <div><a href="" className="font-[700] text-[#0F72EB] text-[14px] font-[Mont] font-[600]">Подробнее</a></div> 
+        <div><a href="https://t.me/botstudiooo" target="blank"className="font-[700] text-[#0F72EB] text-[14px] font-[Mont] ">Подробнее</a></div> 
         </div>
         <div className="bg-white w-full justify-start rounded-[12px] h-full py-[22px] px-[20px] flex flex-col gap-[14px]" >
         <div className="w-[82px] h-[73px] img"><img className="w-full h-full object-cover" src={'/posib5.png'}/></div>
@@ -49,7 +49,7 @@ export const Posib = ()=> {
             <p className="text-[#333333] text-[13px]">Настраиваем метрики, A/B-тесты и берём бот
             на круглосуточную поддержку</p>
         </div>
-        <div><a href="" className="font-[700] text-[#0F72EB] text-[14px] font-[Mont] font-[600]">Подробнее</a></div> 
+        <div><a href="https://t.me/botstudiooo" target="blank" className="font-[700] text-[#0F72EB] text-[14px] font-[Mont] ">Подробнее</a></div> 
         </div>
         <div className="bg-[#E8E8E8] last  w-full justify-center  rounded-[12px] h-[247px] py-[22px] px-[20px] flex flex-col gap-[14px]" >
        
@@ -61,7 +61,7 @@ export const Posib = ()=> {
 опишите вашу задачу, а реализацию
 мы возьмем на себя   </p>
         </div>
-        <div><a href="" className="font-[700] text-[#0F72EB] text-[14px]">Подробнее</a></div> 
+        <div><a href="https://t.me/botstudiooo" target="blank" className="font-[700] text-[#0F72EB] text-[14px]">Подробнее</a></div> 
         </div>
         </div>
     </div>

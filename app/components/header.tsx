@@ -38,7 +38,7 @@ export const Header = () => {
   </div>
   <div className=" flex items-center gap-[35px] contacts">
     <div className="flex  items-center gap-[14px] cursor-pointer" onClick={()=> {
-      window.open('https://t.me/botstudiooo','_blank')
+      window.open('https://t.me/botstudio_manager','_blank')
     }}>
     <svg className="cursor-pointer" width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.533 0.908043H14.467C6.47708 0.908043 0 7.40567 0 15.4209V15.4871C0 23.5024 6.47708 30 14.467 30H14.533C22.5229 30 29 23.5024 29 15.4871V15.4209C29 7.40567 22.5229 0.908043 14.533 0.908043Z" fill="#00B0F2"/>

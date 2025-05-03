@@ -1,5 +1,22 @@
 'use client'
+
+import { useState } from "react";
+
 export const Mail = ()=> {
+    const [telegram, setTelegram] = useState("");
+    const [error, setError] = useState("");
+
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        if (!telegram.trim()) {
+            setError("Пожалуйста, укажите ссылку на ваш Telegram.");
+            return;
+        }
+
+        setError("");
+        // тут можно добавить отправку формы
+        console.log("Форма отправлена!");
+    };
     return(
         <div className="max-w-[1437px] w-full mx-auto">
         <div id="mail" className="mb-[55px] mail_container justify-between    relative flex  h-[544px] overflow-hidden bg-[#FFFFFF] rounded-[25px] py-[47px] px-[59px] mx-[58px] mt-[118px]">
@@ -30,12 +47,30 @@ export const Mail = ()=> {
 <div className="z-[999999999]">
     <div><h1 className="max-w-[498px] w-full font-[700] text-[#333333] text-[23px] font-[Mont]">Свяжемся с вами, чтобы уточнить детали
     вашей задумки</h1></div>
-    <form action="">
-    <div className="w-full mt-[13px]"><input className= "outline-none bg-[#F2F2F2] rounded-[30px] py-[19px] px-[29px] w-full" type="text" placeholder="Ваше ФИО" /></div>
-    <div className="w-full "><input className="mt-[14px] outline-none bg-[#F2F2F2] rounded-[30px] py-[19px] px-[29px] w-full" type="text" placeholder="Ссылка на ваш профиль в Telegram" required /></div>
-    <div className=""><textarea  name="" className="mt-[13px] h-[136px] bg-[#F2F2F2] rounded-[30px] py-[19px] px-[29px] w-full resize-none outline-none" placeholder="Опишите вашу идею или задачу" id=""></textarea></div>
-    <div className=""><button className="mt-[32px] w-[184p] text-[#333333] font-[600] text-[14px] bg-[#FFFFFF] rounded-[20px] font-[Mont] py-[9px] px-[31px]">Отправить</button></div>
-    </form>
+    <form onSubmit={handleSubmit} noValidate>
+  <div className="w-full mt-[13px]">
+    <input className="outline-none bg-[#F2F2F2] rounded-[30px] py-[19px] px-[29px] w-full" type="text" placeholder="Ваше ФИО" />
+  </div>
+  <div className="w-full ">
+    <input
+      className="mt-[14px] outline-none bg-[#F2F2F2] rounded-[30px] py-[19px] px-[29px] w-full"
+      type="text"
+      placeholder="Ссылка на ваш профиль в Telegram"
+      value={telegram}
+      onChange={(e) => setTelegram(e.target.value)}
+    />
+    {error && <p className="text-red-500 text-sm mt-1">{error}</p>}
+  </div>
+  <div className="">
+    <textarea className="mt-[13px] h-[136px] bg-[#F2F2F2] rounded-[30px] py-[19px] px-[29px] w-full resize-none outline-none" placeholder="Опишите вашу идею или задачу"></textarea>
+  </div>
+  <div className="">
+    <button type="submit" className="mt-[32px] w-[184px] text-[#333333] font-[600] text-[14px] bg-[#FFFFFF] rounded-[20px] font-[Mont] py-[9px] px-[31px]">
+      Отправить
+    </button>
+  </div>
+</form>
+
     <div className="mt-[13px]"><span className="italic text-[#FFFFFF] text-[10px]">Нажимая “Отправить” вы соглашаетесь с Политика в отношении обработки персональных данных</span></div>
 </div>
 

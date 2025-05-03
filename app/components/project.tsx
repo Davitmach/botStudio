@@ -5,20 +5,23 @@ export const Project = ()=> {
         const container = document.querySelector('.projects') as HTMLElement | null;
         if (!container) return;
 
-        let scrollDirection = 1; // 1 — вправо, -1 — влево
+        const scrollSpeed = 0.5; // можно настроить
         let animationFrame: number;
         let isPaused = false;
-        const scrollSpeed = 1; // скорость прокрутки, можешь изменить
+
+        // Клонируем весь контент
+        const originalContent = container.innerHTML;
+        container.innerHTML += originalContent;
 
         const scroll = () => {
             if (!isPaused) {
-                container.scrollLeft += scrollDirection * scrollSpeed;
+                container.scrollLeft += scrollSpeed;
 
-                const maxScrollLeft = container.scrollWidth - container.clientWidth;
+                const scrollWidthHalf = container.scrollWidth / 2;
 
-                // Точное сравнение с запасом для плавности
-                if (container.scrollLeft >= maxScrollLeft - 2) scrollDirection = -1;
-                if (container.scrollLeft <= 2) scrollDirection = 1;
+                if (container.scrollLeft >= scrollWidthHalf) {
+                    container.scrollLeft -= scrollWidthHalf;
+                }
             }
 
             animationFrame = requestAnimationFrame(scroll);
