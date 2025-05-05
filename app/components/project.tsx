@@ -8,7 +8,7 @@
             let scrollDirection = 1; // 1 — вправо, -1 — влево
             let animationFrame: number;
             let isPaused = false;
-            const scrollSpeed = 0.5; // скорость прокрутки, можешь изменить
+            const scrollSpeed = 1; // скорость прокрутки, можешь изменить
     
             const scroll = () => {
                 if (!isPaused) {
