@@ -187,11 +187,33 @@ header a {
 
 /* banner */
 
-
-@media (max-width:1399px) {
-  .banner_container .phone {
-    width: 300px;
+@media (max-width:1549px) {
+    .banner_container .phone svg {
+    width: 400px;
+    height: 400px;
   }
+}
+@media (max-width:1229px) {
+  .banner_container .phone svg {
+  width: 300px;
+  height: 300px;
+}
+}
+@media (max-width:767px) {
+  .banner_container .phone svg {
+  width: 200px;
+  height: 200px;
+}
+}
+@media (max-width:629px) {
+  .banner_container .phone  {
+display: none;
+}
+}
+@media (max-width:1399px) {
+  /* .banner_container .phone {
+    width: 300px;
+  } */
 
   .project_container .info_block h1 {
     font-size: 23px;
@@ -216,9 +238,9 @@ header a {
   .banner_container .title h1 {
     font-size: 31px;
   }
-  .banner_container .phone {
+  /* .banner_container .phone {
   width: 250px;
-  }
+  } */
   .project_container .projects h1 {
     font-size: 9px;
     width: 100%;
@@ -238,15 +260,15 @@ header a {
 }
 
 @media (max-width:703px) {
-  .banner_container .phone {
+  /* .banner_container .phone {
     width: 200px;
-    }
+    } */
 }
 
 @media (max-width:639px) {
-  .banner_container .phone {
+  /* .banner_container .phone {
     width: 150px;
-    }
+    } */
     .posib_container >div:last-child  {
       grid-template-columns: repeat(2,minmax(100px,1fr));
       grid-template-rows:repeat(3,minmax(147px,1fr)) ;
