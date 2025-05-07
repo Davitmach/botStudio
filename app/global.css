@@ -532,3 +532,27 @@ display: none;
   overflow-x: auto;
   transition: .4s;
 }
+@media (max-width:1320px) {
+  .phone img {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (max-width:976px) {
+  .phone img {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media (max-width:774px) {
+  .phone img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width:724px) {
+  .phone img {
+    width: 200px;
+    height: 200px;
+  }
+}
