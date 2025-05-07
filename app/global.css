@@ -524,3 +524,11 @@ display: none;
   font-size: 8px;
  }
 }
+.project_container > .projects{
+  overflow-x: hidden;
+  transition: .4s;
+}
+.project_container > .projects:hover{
+  overflow-x: auto;
+  transition: .4s;
+}
