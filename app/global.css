@@ -514,7 +514,7 @@ display: none;
 
 }
 
-@media (max-width:717px) {
+@media (max-width:798px) {
  .posib_container >.posibs >div{
  padding-bottom: 20px;
   padding-top: 3px;
@@ -554,5 +554,13 @@ display: none;
   .phone img {
     width: 200px;
     height: 200px;
+  }
+}
+@media (max-width:1078px) {
+  .posibs >div a {
+    font-size: 12px;
+  }
+  .posibs .gotg {
+    transform: translateY(-10px);
   }
 }
